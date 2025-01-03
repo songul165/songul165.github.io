@@ -1,0 +1,201 @@
+
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #5d615c;
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .container {
+            width: 85%;
+            margin: 40px auto;
+        }
+
+        .book {
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .book:hover {
+            transform: scale(1.05);
+        }
+
+        .book img {
+            width: 180px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .book-details {
+            flex-grow: 1;
+            padding-left: 20px;
+        }
+
+        .book-title {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .book-description {
+            font-size: 1.1em;
+            line-height: 1.5;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .detail-link {
+            font-size: 1.1em;
+            color: #007BFF;
+            text-decoration: none;
+            border: 2px solid #007BFF;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: white;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .detail-link:hover {
+            background-color: #007BFF;
+            color: white;
+        }
+
+        .button {
+            background-color: #5D5C61;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-align: center;
+            display: block;
+            margin: 20px auto;
+            font-size: 1.2em;
+            width: 250px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #4A4A47;
+        }
+
+        .book-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 40px;
+        }
+
+        .book-table th, .book-table td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        .book-table th {
+            background-color: #f1f1f1;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .book-table tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>EN SEVDİĞİM KİTAPLAR</h1>
+    </header>
+
+    <div class="container">
+        <!-- Küçük Prens -->
+        <div class="book">
+            <img src="./images/kucukprens.jpg" alt="Küçük Prens">
+            <div class="book-details">
+                <div class="book-title">Küçük Prens</div>
+                <div class="book-description">
+                    Hikaye, bir çocuğun gözünden hayata dair derin anlamlar ve evrensel değerler üzerine bir felsefi yolculuğu anlatır. Kitap, dostluk, sevgi, sorumluluk ve insan olmanın anlamı gibi temaları işler, her yaştan okuyucuya hitap eder.
+                </div>
+                <a href="kucukprens.html" class="detail-link">Detaylar</a>
+            </div>
+        </div>
+
+        <!-- Serenad -->
+        <div class="book">
+            <img src="./images/serenad.jpg" alt="Serenad">
+            <div class="book-details">
+                <div class="book-title">Serenad</div>
+                <div class="book-description">
+                    Kitap, farklı zaman dilimlerinde geçen ve geçmişin travmalarını, aşkı, politik gerilimleri, insanlık hallerini derinlemesine işleyen bir hikaye sunar.
+                </div>
+                <a href="serenad.html" class="detail-link">Detaylar</a>
+            </div>
+        </div>
+
+        <!-- Dönüşüm -->
+        <div class="book">
+            <img src="./images/donusum.jpg" alt="Dönüşüm">
+            <div class="book-details">
+                <div class="book-title">Dönüşüm</div>
+                <div class="book-description">
+                    Kitap, insanın bireysel ve toplumsal yabancılaşmasını, kimlik krizini ve insan olmanın anlamını sorgular.
+                </div>
+                <a href="donusum.html" class="detail-link">Detaylar</a>
+            </div>
+        </div>
+
+        <!-- Simyacı -->
+        <div class="book">
+            <img src="./images/simyaci.jpg" alt="Simyacı">
+            <div class="book-details">
+                <div class="book-title">Simyacı</div>
+                <div class="book-description">
+                    Bireyin hayallerinin peşinden gitmesi, yaşamın anlamını keşfetmesi ve içsel yolculuğuna çıkması üzerine derin anlamlar barındıran bir romandır. 
+                </div>
+                <a href="simyaci.html" class="detail-link">Detaylar</a>
+            </div>
+        </div>
+
+        <!-- Sofie'nin Dünyası -->
+        <div class="book">
+            <img src="./images/sofienin.jpg" alt="Sofie'nin Dünyası">
+            <div class="book-details">
+                <div class="book-title">Sofie'nin Dünyası</div>
+                <div class="book-description">
+                    Felsefi bir roman olup, felsefenin tarihini bir hikaye aracılığıyla anlatan etkileyici bir eserdir. Kitap, Sofie adında bir genç kızın felsefeyle tanıştığı bir yolculuğu anlatır.
+                </div>
+                <a href="sofıenındunyası.html" class="detail-link">Detaylar</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
